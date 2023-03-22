@@ -1,7 +1,9 @@
 import { PokemonCreator } from "./pokemon_creator";
 import { WaterPokemon } from "../pokemon/water_pokemon";
 import { Pokemon } from "../pokemon/pokemon";
-
+/**
+ * Clase WaterPokemonCreator
+ */
 export class WaterPokemonCreator extends PokemonCreator {
   constructor(
     private readonly name: string,
@@ -11,6 +13,10 @@ export class WaterPokemonCreator extends PokemonCreator {
   ) {
     super();
   }
+  /**
+   * Factory method
+   * @returns Pokemon de tipo agua
+   */
   public factoryMethod(): Pokemon {
     return new WaterPokemon(this.name, this.level, this.stats, this.type);
   }
