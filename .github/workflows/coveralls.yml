@@ -1,5 +1,5 @@
 name: Coveralls
-
+repo_token: zHp9a0M11zbhH6nn414GvOKbm9EFJxYKy
 on:
   push:
     branches: [ "main" ]
